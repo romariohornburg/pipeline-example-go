@@ -14,9 +14,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
+      tag: jonathanbaraldi/pipeline-example-go:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
-      registry: harbor.rancher.ailos.coop.br
+      registry: index.docker.io
 - name: Deploy
   steps:
   - applyYamlConfig:
