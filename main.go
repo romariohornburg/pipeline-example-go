@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-const webContent = "Hello World!"
+const webContent = "JonJon!"
 
 func main() {
 	http.HandleFunc("/", helloHandler)
